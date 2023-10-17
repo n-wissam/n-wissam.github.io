@@ -84,9 +84,9 @@ params:
 #    - name: email
 #      url: mailto:
     - name: linkedin
-      url: "https://linkedin.com/"
+      url: "https://linkedin.com/in/wissam-alkadi"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/n-wissam"
     - name: rss
       url: "/posts/index.xml"
 

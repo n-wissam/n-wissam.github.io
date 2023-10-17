@@ -1,39 +1,22 @@
 ---
 title: "RHCSA - Managing Software"
-description: "Manage software"
-date: 2023-10-17T11:30:03+00:0
-showToc: true
-TocOpen: false
+date: 2023-10-15T21:07:00+03:00
 draft: false
-author: "Wissam"
+hideToc: false
+enableToc: true
+enableTocContent: false
+description: "A software management cheatsheet for RHCSA"
+author: Wissam
+authorEmoji: 💻
 tags: 
 - RHCSA
-- Red Hat
 - Linux
+- Red Hat
 categories:
 - Linux
 series:
 - RHCSA Notes
-
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/<path_to_repo>/content"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
-
-# searchHidden: true
-# weight: 1
-# aliases: ["/first"]
-# canonicalURL: "https://canonical.url/to/page"
-# disableShare: false
-
 ---
-
 
 
 ## `dnf` / `yum` command
