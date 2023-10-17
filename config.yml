@@ -14,8 +14,9 @@ minify:
   disableXML: true
   minifyOutput: true
 
+disqusShortname: techynotes-me
+
 params:
-  disqusShortname: techynotes-me
   ShowAllPagesInArchive: true
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Techy Notes 💻
