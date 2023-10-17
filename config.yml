@@ -18,8 +18,8 @@ params:
   disqusShortname: techynotes-me
   ShowAllPagesInArchive: true
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: Techy Notes 💻
+  description: "Just some useful techy notes"
   keywords: [networking, linux]
   author: Wissam
   # author: ["Me", "You"] # multiple authors
