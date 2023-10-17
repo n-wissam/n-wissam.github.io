@@ -1,0 +1,194 @@
+baseURL: "https://www.techynotes.me/"
+title: Techy Notes
+paginate: 5
+theme: ["hugo-notice", "PaperMod"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  disqusShortname: techynotes-me
+  ShowAllPagesInArchive: true
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: ExampleSite
+  description: "ExampleSite description"
+  keywords: [networking, linux]
+  author: Wissam
+  # author: ["Me", "You"] # multiple authors
+  #  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  hideFooter: false
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon/favicon.ico"
+    favicon16x16: "/favicon/favicon-16x16.png"
+    favicon32x32: "/favicon/favicon-32x32.png"
+    apple_touch_icon: "/favicon/apple-touch-icon.png"
+    safari_pinned_tab: "/favicon/safari-pinned-tab.svg"
+   # theme_color: '#ffffff'
+
+  label:
+    text: "Techy Notes"
+    icon: /logo.png
+    iconHeight: 38
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Techy Notes
+    subtitle: "Welcome to my website!"
+    imageUrl: logo.png
+    imageWidth: 150
+    imageHeight: 150
+    imageTitle: my image
+#    buttons:
+#      - name: Posts
+#        url: posts
+#      - name: Tags
+#        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+#    - name: email
+#      url: mailto:
+    - name: linkedin
+      url: "https://linkedin.com/"
+    - name: github
+      url: "https://github.com/"
+    - name: rss
+      url: "/posts/index.xml"
+
+
+
+
+
+  #  analytics:
+  #    google:
+  #      SiteVerificationTag: "XYZabc"
+  #    bing:
+  #      SiteVerificationTag: "XYZabc"
+  #    yandex:
+  #      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  #  editPost:
+  #    URL: "https://github.com/<path_to_repo>/content"
+  #    Text: "Suggest Changes" # edit text
+  #    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.1
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+ 
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+    
+menu:
+  main:
+    - name: " Posts"
+      identifier: "Posts"
+      url: posts/
+      weight: 10
+      pre: <i class="fa-solid fa-pen"></i>
+    - name: "Linux"
+      url: /categories/linux
+      parent: "Posts"
+      weight: 20
+    - name: "networking"
+      url: /categories/networking
+      parent: "Posts"
+      weight: 30       
+    - name: " Tags"
+      url: tags/
+      weight: 40
+      pre: <i class="fa-solid fa-tags"></i>
+    - name: " Archive"
+      url: archive/
+      weight: 50
+      pre: <i class="fa-solid fa-folder-open"></i>
+#    - name: " About Me"
+#      url: about/
+#      weight: 60
+#      pre: <i class="fa-solid fa-user-tie"></i>
+#    - name: ""
+#      url: posts/index.xml
+#      weight: 70
+#      title: "RSS"
+#      pre: <i class="fa-solid fa-square-rss"></i>
+    - name: " "
+      url: search/
+      weight: 80
+      title: "Search"
+      pre: <i class="fa-solid fa-magnifying-glass fa"></i>
+
+
+
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    highlight:
+        # anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        lineNos: false
+        noClasses: false
+        style: monokai
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+

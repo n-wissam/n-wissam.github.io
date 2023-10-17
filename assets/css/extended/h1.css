@@ -1,0 +1,74 @@
+h2 {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 0.3em;
+}
+
+@media screen and (min-width: 800px) {
+h1 { 
+	font-size: 48px;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #2196F3;
+	text-underline-offset: 0.9rem;
+	padding-bottom: 15px;
+	padding-top: 20px;
+	text-align: center;	
+	text-underline-offset: 0.8rem;
+}
+
+h2:before,
+h2:after {
+  background-color: #2196F3;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h2:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+}
+
+#menu .active {
+	border-bottom: 2px solid #2196F3;
+}
+
+
+.post-content blockquote {
+	border-inline-start: 4px solid #2196F3;
+}
+
+.chroma {
+  background-color: unset !important;
+}
+
+code.language-shell span.line::before {
+  content: "$ ";
+}
+
+code.language-shell-session span.line::before {
+  content: "# ";
+}
+
+.chroma .hl {
+  background-color: #888 !important;
+}
+
+.notice {
+  margin-top: 20px;
+}
+
+.post-content table th {
+  font-size: 18px;
+}
